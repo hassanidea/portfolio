@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
+import { PostHogProvider } from "@/components/PostHogProvider";
 import "./globals.css";
 
 const SITE_URL = "https://hassannasr.com";
@@ -39,7 +40,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${GeistSans.variable} ${GeistMono.variable}`}
       suppressHydrationWarning
     >
-      <body className="min-h-dvh font-sans">{children}</body>
+      <body className="min-h-dvh font-sans">
+        <PostHogProvider>{children}</PostHogProvider>
+      </body>
     </html>
   );
 }
