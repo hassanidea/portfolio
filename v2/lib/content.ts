@@ -2,7 +2,7 @@ export const profile = {
   name: "Hassan Nasr Hassan",
   pitch:
     "I build production AI and data systems. Currently shipping real-time Arabic voice AI at Arcain. Previously 4+ years of data engineering across Canadian federal agencies.",
-  location: "Remote · Open to relocation",
+  location: "Remote",
   email: "hassannasr.hsn@gmail.com",
   github: "https://github.com/hassanidea",
   linkedin: "https://linkedin.com/in/hassann-hassan",
@@ -67,7 +67,7 @@ export const experience: Role[] = [
     bullets: [
       "Fine-tuned Whisper Large-v3 with LoRA on 53k Arabic samples across 14 dialects. Cut WER 30.6 → 17.8% (41.8% relative) and p50 ASR latency to 345 ms.",
       "Shipped a dual-mode FastAPI voice service with streaming ASR / TTS over WebSockets, Silero VAD v5 barge-in, and OpenTelemetry on AWS GPU.",
-      "Built an Emirati Arabic TTS fine-tune on the F5-TTS architecture with a zero-downtime env-var rollback pattern.",
+      "Built an Arabic TTS fine-tune on the F5-TTS architecture with a zero-downtime env-var rollback pattern.",
     ],
   },
   {
@@ -118,4 +118,4 @@ export const experience: Role[] = [
   },
 ];
 
-export const resume = { label: "Resume", file: "/Resume.pdf" };
+export const resume = { label: "Resume", file: "/Hassan_Nasr_Hassan_Resume.pdf" };
